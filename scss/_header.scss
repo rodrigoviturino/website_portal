@@ -1,0 +1,53 @@
+/* HEADER */
+.header {
+    position: fixed;
+    width: 100%;
+    &__content {
+        padding: 20px;
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        &__logo {
+            a {
+                font-weight: 600;
+                line-height: 18px;
+                letter-spacing: 2px;
+                color: #fff;
+                @include type-2(18);
+            }
+        }
+
+        &__menuList {
+            @include device(s) {
+                display: none;
+            }
+            &__group {
+                display: flex;
+                justify-content: flex-end;
+                &__item {
+
+                    a {
+                        display: block;
+                        padding: 0 20px;
+                        color: #fff;
+                        font-weight: 500;
+                        line-height: 14px;
+                        @include type-2(14);
+
+                        &:hover {
+                            color: #23d3d3;
+                            transition: all .5s;
+                        }
+
+                    }
+                }
+            } 
+        }
+
+    }
+}
+
+/* END HEADER */
