@@ -248,35 +248,8 @@ ul, li {
 .header {
   position: fixed;
   width: 100%; }
-  .header__content {
-    padding: 20px; }
-    .header__content .container {
-      display: flex;
-      align-items: center; }
-    .header__content__logo a {
-      font-weight: 600;
-      line-height: 18px;
-      letter-spacing: 2px;
-      color: #fff;
-      font-family: "Playfair Display", serif;
-      font-size: 1.125em; }
-    @media screen and (max-width: 759px) {
-      .header__content__menuList {
-        display: none; } }
-    .header__content__menuList__group {
-      display: flex;
-      justify-content: flex-end; }
-      .header__content__menuList__group__item a {
-        display: block;
-        padding: 0 20px;
-        color: #fff;
-        font-weight: 500;
-        line-height: 14px;
-        font-family: "Playfair Display", serif;
-        font-size: 0.875em; }
-        .header__content__menuList__group__item a:hover {
-          color: #23d3d3;
-          transition: all .5s; }
+  .header__menu__nav ul {
+    display: flex; }
 
 /* END HEADER */
 /* BANNER INTRO */
