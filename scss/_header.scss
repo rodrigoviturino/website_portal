@@ -2,16 +2,48 @@
 .header {
     position: fixed;
     width: 100%;
-    
+    background-color: rgba(0, 0, 0, 0.178);
+    padding: 25px 0;
 
+    .wrapper {
+        display: flex;
+        align-items: center;
+     }
+
+    &__logo {
+        img {
+            width: 60%;
+        }
+    }
     &__menu {
         
         &__nav {
 
             ul {
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                li {
+                    
+                    a {
+                        color: #fff;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        @include type-1(14);
+                    }
+
+                    &:nth-child(7) {
+                        background-color: #6d5149;
+                        padding: 8px 15px;
+                        border-radius: 50px;
+                    }
+                }
+
             }
         }
     }
+
 }
 /* END HEADER */
