@@ -446,10 +446,11 @@ ul, li {
 }
 .servicos__column-right {
   border: solid 1px #f1f1f1;
-  padding: 20px;
+  padding: 40px;
 }
 .servicos__column-right__block-title {
   text-align: center;
+  margin-bottom: 60px;
 }
 .servicos__column-right__block-title p {
   color: #c4ab96;
@@ -466,6 +467,63 @@ ul, li {
   text-transform: capitalize;
   font-family: "Playfair Display", serif;
   font-size: 1.5625em;
+}
+.servicos__column-right .my-3 {
+  margin: 30px 0;
+}
+.servicos__column-right .t {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.servicos__column-right .t .top {
+  display: flex;
+  justify-content: space-between;
+}
+.servicos__column-right .t .top h3 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #727475;
+  font-family: "Playfair Display", serif;
+  font-size: 1em;
+}
+.servicos__column-right .t .top h3:after {
+  content: "";
+  display: inline-block;
+  border: dotted 2px #f1f1f1;
+  width: 295px;
+  margin-left: 18px;
+  position: absolute;
+  top: 12px;
+  left: 99px;
+}
+.servicos__column-right .t .top p {
+  color: #727475;
+  font-weight: 600;
+  font-size: 17px;
+  font-family: "Playfair Display", sans-serif;
+}
+.servicos__column-right .t .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 8px;
+}
+.servicos__column-right .t .bottom__description {
+  font-weight: 100;
+  color: #a3a3a3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875em;
+}
+.servicos__column-right .t .bottom__new {
+  border-radius: 50px;
+  padding: 4px 11px;
+  color: #fff;
+  background-color: #c4ab96;
+  font-family: "Playfair Display", serif;
+  font-size: 1.0625em;
 }
 
 /* end Serviços */

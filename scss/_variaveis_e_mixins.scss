@@ -85,7 +85,10 @@ $font-2: 'Playfair Display', serif;
 
 @mixin type-2($size) {
     font-family: $font-2;
-    @if $size == 12 {
+    @if $size == 10 {
+        font-size: em(10);
+    }
+    @else if $size == 12 {
         font-size: em(12);
     }
     @else if $size == 14 {
@@ -93,6 +96,9 @@ $font-2: 'Playfair Display', serif;
     }
     @else if $size == 16 {
         font-size: em(16);
+    }
+    @else if $size == 17 {
+        font-size: em(17);
     }
     @else if $size == 18 {
         font-size: em(18);
