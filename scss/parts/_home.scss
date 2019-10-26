@@ -208,3 +208,74 @@
     }
 }
 /* end Serviços */
+
+/* Prices */
+.prices {
+    background-image: url('assets/img/bg-01.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+
+    &__subTitle {
+        color: #fff;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        font-weight: 100;
+        text-align: center;
+        @include type-1(17);
+    }
+
+    &__title {
+        font-weight: 700;
+        text-align: center;
+        color:#fff;
+        @include type-2(40);
+    }
+
+    /* Boxs */
+    &__box {
+        background-color: #fff;
+        padding: 40px;
+
+        &__block-price {
+            .subTitle {
+                color:#c4ab96;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 3px;
+                padding-bottom: 7px;
+                @include type-1(17);
+            }
+
+            .price {
+                font-weight: 400;
+                line-height: 45px;
+                text-transform: uppercase;
+                color: #727475;
+                padding-bottom: 12px;
+                @include type-2(40);
+            }
+
+            .description {
+                font-weight: 100;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: #a3a3a3;
+                @include type-1(13);
+            }
+        }
+
+        &__block-info {
+            &__list {
+
+            }
+        }
+
+        &__block-footer {
+
+        }
+    }
+
+    /* end Boxs */
+}
+/* end Prices */
