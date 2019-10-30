@@ -497,6 +497,10 @@
         justify-content: center;
         align-items: center;
 
+        &:last-child {
+            border-right: none;
+        }
+
         img {
             width: 70px;
             height: 70px;
