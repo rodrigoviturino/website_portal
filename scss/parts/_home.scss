@@ -94,6 +94,7 @@
 
 /* Serviços */
 .servicos {
+    padding: 80px 0;
     &__subTitle {
         text-align: center;
         font-weight: 100;
@@ -124,6 +125,7 @@
     &__column-right {
         border: solid 1px #f1f1f1;
         padding: 40px;
+        padding-bottom: 15px;
 
         &__block-title {
             text-align: center;
@@ -229,15 +231,41 @@
         font-weight: 700;
         text-align: center;
         color:#fff;
+        padding-bottom: 60px;
         @include type-2(40);
     }
+
 
     /* Boxs */
     &__box {
         background-color: #fff;
-        padding: 40px;
+        // padding: 40px;
+        border-radius: 25px;
 
+        /* Box Escuro */
+        .block-price-dark {
+            background-color: #6D5149 !important;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+
+            .subTitle {
+                color: #fff !important;
+            }
+
+            .price {
+                color: #fff !important;
+            }
+
+            .description {
+                color: #fff !important;
+            }
+        }
+        /* end Box Escuro */
+
+        /* Preço */
         &__block-price {
+            padding: 40px;
+
             .subTitle {
                 color:#c4ab96;
                 text-transform: uppercase;
@@ -252,7 +280,7 @@
                 line-height: 45px;
                 text-transform: uppercase;
                 color: #727475;
-                padding-bottom: 12px;
+                padding: 8px 0 20px;
                 @include type-2(40);
             }
 
@@ -264,18 +292,196 @@
                 @include type-1(13);
             }
         }
-
+        /* end Preço */
+        
         &__block-info {
+            padding: 10px 40px;
             &__list {
+                
+                .item {
+                    display: flex;
+                    align-items: center;
+                    border-bottom: solid 1px #f1f1f1;
+                    padding-bottom: 5px;
+                    padding-top: 7px;
 
+                    img {
+                        height: 12px;
+                    }
+
+                    .description {
+                        padding-left: 10px;
+                        color: #a3a3a3;
+                        font-weight: 400;
+                        line-height: 29px;
+                        @include type-1(14);
+                    }
+                }
             }
         }
 
         &__block-footer {
+            padding: 30px 40px 40px;
+            .btn {
+                color: #fff;
+                display: block;
+                padding: 10px;
+                text-transform: uppercase;
+                width: 35%;
+                text-align: center;
+                background-color: #c4ab96;
+                border-radius: 50px;
+                font-weight: 400;
+                @include type-2(13);
+            }
 
-        }
+            .btn-dark {
+                background-color: #6D5149;
+                color: #fff;
+                display: block;
+                padding: 10px;
+                text-transform: uppercase;
+                width: 35%;
+                text-align: center;
+                border-radius: 50px;
+                font-weight: 400;
+                @include type-2(13);
+            }
+        }   
     }
 
     /* end Boxs */
 }
+
 /* end Prices */
+
+
+/* Treatments */
+
+.treatments {
+    padding: 40px 0;
+
+    &__block-title {
+        padding-bottom: 80px;
+        &__subTitle {
+            color: #a3a3a3;
+            padding-bottom: 10px;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 17px;
+            text-align: center;
+            @include type-1(17);
+        }
+
+        &__title {
+            color: #727475;
+            line-height: 40px;
+            text-align: center;
+            font-weight: 700;
+            @include type-2(40);
+        }
+    }
+
+    &__column-right {
+
+        .item {
+
+            .img {
+                position: relative;
+            
+                .block-title {
+                    position: absolute;
+                    bottom: 0px;
+                    text-transform: uppercase;
+                    transition: all 0.7s;
+                    left: 0px;
+                    padding-left: 15px;
+                    padding-bottom: 40px;
+                    padding-top: 15px;
+                    width: 100%;
+                    color: #fff;
+                    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+                    background: -moz-linear-gradient(top, rgba(101,100,96,0) 0%, rgba(101,100,96,0.1) 60%, rgba(101,100,96,0.65) 100%);
+                    background: -webkit-linear-gradient(top, rgba(101, 100, 96, 0) 0%, rgba(101, 100, 96, 0.51) 60%, rgb(101, 100, 96) 100%);
+                    padding-top: 100px;
+
+                    p {
+                        font-weight: 100;
+                        letter-spacing: 2.5px;
+                        text-align: center;
+                        @include type-1(17);
+                    }
+                }
+            }
+        }
+    }
+    &__column-center {
+
+        .item {
+
+            .img {
+                position: relative;
+            
+                .block-title {
+                    position: absolute;
+                    bottom: 0px;
+                    text-transform: uppercase;
+                    transition: all 0.7s;
+                    left: 0px;
+                    padding-left: 15px;
+                    padding-bottom: 40px;
+                    padding-top: 15px;
+                    width: 100%;
+                    color: #fff;
+                    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+                    background: -moz-linear-gradient(top, rgba(101,100,96,0) 0%, rgba(101,100,96,0.1) 60%, rgba(101,100,96,0.65) 100%);
+                    background: -webkit-linear-gradient(top, rgba(101, 100, 96, 0) 0%, rgba(101, 100, 96, 0.51) 60%, rgb(101, 100, 96) 100%);
+                    padding-top: 100px;
+
+                    p {
+                        font-weight: 100;
+                        letter-spacing: 2.5px;
+                        text-align: center;
+                        @include type-1(17);
+                    }
+                }
+            }
+        }
+    }
+    &__column-left {
+
+        .item {
+
+            .img {
+                position: relative;
+            
+                .block-title {
+                    position: absolute;
+                    bottom: 0px;
+                    text-transform: uppercase;
+                    transition: all 0.7s;
+                    left: 0px;
+                    padding-left: 15px;
+                    padding-bottom: 40px;
+                    padding-top: 15px;
+                    width: 100%;
+                    color: #fff;
+                    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+                    background: -moz-linear-gradient(top, rgba(101,100,96,0) 0%, rgba(101,100,96,0.1) 60%, rgba(101,100,96,0.65) 100%);
+                    background: -webkit-linear-gradient(top, rgba(101, 100, 96, 0) 0%, rgba(101, 100, 96, 0.51) 60%, rgb(101, 100, 96) 100%);
+                    padding-top: 100px;
+
+                    p {
+                        font-weight: 100;
+                        letter-spacing: 2.5px;
+                        text-align: center;
+                        @include type-1(17);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* end Treatments */
