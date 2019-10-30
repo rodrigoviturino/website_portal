@@ -770,3 +770,29 @@ ul, li {
 }
 
 /* end Treatments */
+/* Vantagens */
+.vantagem__box {
+  padding: 60px;
+  border: none;
+  border-right: solid 1px #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vantagem__box img {
+  width: 70px;
+  height: 70px;
+}
+.vantagem__box p {
+  font-weight: 100;
+  line-height: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75em;
+}
+
+/* end Vantagens */
