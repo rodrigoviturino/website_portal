@@ -121,6 +121,9 @@ $font-2: 'Playfair Display', serif;
     @else if $size == 40 {
         font-size: em(40);
     }
+    @else if $size == 50 {
+        font-size: em(50);
+    }
     @else if $size == 90 {
         font-size: em(90);
     }
