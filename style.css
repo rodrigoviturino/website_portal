@@ -315,7 +315,7 @@ ul, li {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.178);
   padding: 25px 0;
-  z-index: 1;
+  z-index: 10;
 }
 .header .wrapper {
   display: flex;
@@ -538,12 +538,25 @@ ul, li {
 /* end Serviços */
 /* Prices */
 .prices {
-  background-image: url("assets/img/bg-01.jpg");
+  background-image: url("http://www.nicdarkthemes.com/themes/beauty/wp/demo/massage/wp-content/uploads/sites/8/2017/02/parallax-4.jpg");
   background-position: center;
-  background-size: cover;
   padding: 100px 0;
+  position: relative;
   /* Boxs */
   /* end Boxs */
+}
+.prices .container {
+  z-index: 1;
+}
+.prices:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(101, 100, 96, 0.3);
+  left: 0px;
+  top: 0;
+  z-index: 0;
 }
 .prices__subTitle {
   color: #fff;
@@ -825,6 +838,7 @@ ul, li {
 }
 .cta__block-title {
   text-align: center;
+  padding-bottom: 30px;
 }
 .cta__block-title__title {
   z-index: 10;
@@ -865,6 +879,10 @@ ul, li {
 
 /* end CTA */
 /* Funcionario */
+.funcionario {
+  position: relative;
+  top: -100px;
+}
 .funcionario__box__image {
   text-align: center;
 }
@@ -920,7 +938,7 @@ ul, li {
 }
 .best-products__block-title {
   text-align: center;
-  padding: 80px 0;
+  padding: 0 0 80px;
 }
 .best-products__block-title p {
   color: #a3a3a3;
